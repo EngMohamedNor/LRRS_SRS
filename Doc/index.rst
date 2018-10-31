@@ -1,5 +1,8 @@
-Table of Contents (All)
-=========================================
+.. image::/image005.png
+
+Table of Contents (Revised)
+==================
+
 1.  Introduction	2
 1.1  Purpose	2
 1.2  Scope	2
@@ -31,7 +34,7 @@ Table of Contents (All)
 
 
 
-=============================================================
+
 
 1.	INTRODUCTION
 The Lab Report Repository Can Handle all the details about Lab reports The details include posting lab reports  and setting deadline for them by Lecturers  ,  submission of lab reports by students , Marking lab reports . The Lab Report Repository System is an Automated version of manual lab Report management.
@@ -157,10 +160,3 @@ Administrator
 Student 
 Lecturer
 
-.. image::/image005.png
-
-
-
-
-
- (END)
