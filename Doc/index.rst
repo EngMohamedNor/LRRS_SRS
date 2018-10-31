@@ -1,6 +1,6 @@
 .. image::/image005.png
 
-Table of Contents (Revised)
+Table of Contents.
 ==================
 
 1.  Introduction	2
