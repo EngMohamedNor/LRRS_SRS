@@ -1,4 +1,4 @@
-.. image::/image005.png
+.. image::/../../image005.png
 
 Table of Contents.
 ==================
