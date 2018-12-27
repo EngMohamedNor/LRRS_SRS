@@ -1,15 +1,3 @@
-
-Software Requirements Specification For Lab Report Repository System (LRRS)
-==================================================================
- | By Mohamed Nor (201825800050) Elmahdi Houzi (201825800054) 12/27/2018
-**The document in this file adapts the ieee guide to software requirements specifications (std 830-1993).**
-
-\ 
-\ 
-\ 
-
-\ 
-
 **Table of contents**
 
  | 1. Introduction 2
