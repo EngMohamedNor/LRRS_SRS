@@ -8,9 +8,9 @@ Software Requirements Specification For Lab Report Repository System (LRRS)
 **Table of contents**
 
  | 1. Introduction 2
- | 1.1 purpose 2 
- | 1.2 scope 2 
- | 1.3 definitions, acronyms, and abbreviations 2 
+ | 1.1 Purpose 2 
+ | 1.2 Scope 2 
+ | 1.3 Definitions, acronyms, and abbreviations 2 
  | 2. The overall description 3 
  | 2.1 Product perspective 3 
  | 2.1.1 system interfaces 3 
