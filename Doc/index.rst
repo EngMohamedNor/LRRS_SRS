@@ -1,33 +1,43 @@
-=========================================================================================================
-**-**
-=========================================================================================================
-*the document in this file adapts the ieee guide to software requirements specifications (std 830-1993).*
+
+Software Requirements Specification For Lab Report Repository System (LRRS)
+==================================================================
+ | By Mohamed Nor (201825800050) Elmahdi Houzi (201825800054) 12/27/2018
+**The document in this file adapts the ieee guide to software requirements specifications (std 830-1993).**
+
 \ 
 \ 
 \ 
-Mohamed Nor (201825800050) Elmahdi Houzi (201825800054)
-**12/27/2018**
+
 \ 
-
-
-
-
 
 **Table of contents**
 
-1. Introduction 2 **
-1.1 purpose 2
-1.2 scope 2
-1.3 definitions, acronyms, and
-abbreviations 2 2. The overall description 32.1 product perspective
-32.1.1 system interfaces 32.1.2 interfaces 32.1.3 hardware interfaces
-52.1.4 software interfaces 52.1.5 communications interfaces 62.1.6
-memory constraints 62.1.7 operations 62.1.8 site adaptation requirements
-62.2 product functions 62.3 user characteristics 72.4 constraints 72.5
-assumptions and dependencies 72.6 apportioning of requirements 73.
-Modeling Requirements 8 **3.1 UML Use Case Diagram 8 3.1.1 : Use Case
-diagram 8 3.1.1 : Use Case Descriptions 93 . 2 Database diagram 12** 4.
-References 12
+ | 1. Introduction 2
+ | 1.1 purpose 2 
+ | 1.2 scope 2 
+ | 1.3 definitions, acronyms, and abbreviations 2 
+ | 2. The overall description 3 
+ | 2.1 Product perspective 3 
+ | 2.1.1 system interfaces 3 
+ | 2.1.2 Interfaces    3 
+ | 2.1.3 Hardware interfaces  5 
+ | 2.1.4 Software interfaces  5
+ | 2.1.5 Communications interfaces 6
+ | 2.1.6 Memory constraints 6
+ | 2.1.7 Operations 6
+ | 2.1.8 Site adaptation requirements  6 
+ | 2.2 Product functions 6  
+ | 2.3 User characteristics 7   
+ | 2.4 constraints 7  
+ | 2.5 Assumptions and dependencies 7
+ | 2.6 Apportioning of requirements 7 
+ | 3.Modeling Requirements 8 
+ | 3.1 UML Use Case Diagram 8 
+ | 3.1.1 : Use Case diagram 8 
+ | 3.1.1 : Use Case Descriptions 9
+ | 3 . 2 Database diagram 12
+ |  4.References 12
+
 
 **1. Introduction**
 
