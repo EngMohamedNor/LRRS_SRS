@@ -5,22 +5,25 @@
 \ 
 \ 
 \ 
-**mnc/md**
-**10/31/2018**
+Mohamed Nor (201825800050) Elmahdi Houzi (201825800054)
+**12/27/2018**
 \ 
-=========================================================================================================
 
 **Table of contents**
 
-1. Introduction 21.1 purpose 21.2 scope 21.3 definitions, acronyms, and
-abbreviations 31.4 references 31.5 overview 2. The overall description
-32.1 product perspective 42.1.1 system interfaces 42.1.2 interfaces
-42.1.3 hardware interfaces 52.1.4 software interfaces 52.1.5
-communications interfaces 52.1.6 memory constraints 52.1.7 operations
-52.1.8 site adaptation requirements 62.2 product functions 62.3 user
-characteristics 62.4 constraints 62.5 assumptions and dependencies 72.6
-apportioning of requirements 73. Modeling Requirements 73.1 external
-interfaces 7 *3.2 functional requirements 8*
+1. Introduction 2 **
+1.1 purpose 2
+1.2 scope 2
+1.3 definitions, acronyms, and
+abbreviations 2 2. The overall description 32.1 product perspective
+32.1.1 system interfaces 32.1.2 interfaces 32.1.3 hardware interfaces
+52.1.4 software interfaces 52.1.5 communications interfaces 62.1.6
+memory constraints 62.1.7 operations 62.1.8 site adaptation requirements
+62.2 product functions 62.3 user characteristics 72.4 constraints 72.5
+assumptions and dependencies 72.6 apportioning of requirements 73.
+Modeling Requirements 8 **3.1 UML Use Case Diagram 8 3.1.1 : Use Case
+diagram 8 3.1.1 : Use Case Descriptions 93 . 2 Database diagram 12** 4.
+References 12
 
 **1. Introduction**
 
@@ -30,7 +33,7 @@ lecturers , submission of lab reports by students , marking lab reports
 . The lab report repository system is an automated version of manual lab
 report management.
 
-   **1.1 Purpose**
+**1.1 Purpose**
 
 This SRS document contains the complete software requirements for the
 lab report repository system (LRRS) and describes the design decisions,
@@ -55,7 +58,7 @@ lecturers.
 
 This system will benefit both the students and lecturers and the
 institution in general and it reduces the headaches related to lab
-report publication and submission. Tthe students will get a centralized
+report publication and submission. The students will get a centralized
 location for all their lab report assignments and they will not miss any
 assignment.
 
@@ -65,7 +68,7 @@ assignment.
 
 **PHP -** Server Side Scripting language
 
-**SRS -** Software requirements Specification
+**SRS -** Software Requirements Specification
 
 **MySQL -** Relational Database Management System 
 
@@ -76,14 +79,13 @@ assignment.
 **2. Overall description**
 
 The lab report repository system allows authorized admin members to
-create courses ,student lecturer, and TA accounts, assign courses for
-lecturers . The registered lecturers can post lab reports through the
-system and set deadlines for them. The students registered in a course
-can view all lab report assignments posted by lecturers in that course
-portal and can submit their work through the system. The lecturer can
-post results for students. This system can be used in various
-educational institutes across the globe and simplifies work of
-institutes.
+create courses ,student lecturer, and TA accounts. The registered
+lecturers can post lab reports through the system and set deadlines for
+them. The students registered in a course can view all lab report
+assignments posted by lecturers in that course portal and can submit
+their work through the system. The lecturer can post results for
+students. This system can be used in various educational institutes
+across the globe and simplifies work of institutes.
 
 **2.1. Product perspective**
 
@@ -98,16 +100,32 @@ and MySQL as the backend database.
 
 **2.1.2. User interfaces**
 
-**The LRRS will have the following user-friendly and menu driven
-interfaces**
+**The LRRS will have the following user-friendly and menu
+driven interfaces**
 
 a. Login: to allow the entry of only authorized users through valid
    login email or student id and password.
 
-b. Create lecturers : to create lecturers by the administration.
+.. image:: https://github.com/EngMohamedNor/LRRS_SRS/blob/master/Doc/login.png?raw=true
 
-c. Students registration: students can register with their passport
-   number & student id
+
+
+
+b. Students registration: students can register with their passport
+   number & student id. Student registration consist of two steps, first
+   step the student identity is checked in the database and then the
+   system allows for the student to create his/her account with email
+   and password.
+
+.. image:: https://github.com/EngMohamedNor/LRRS_SRS/blob/master/Doc/Signup1.png?raw=true
+.. image:: https://github.com/EngMohamedNor/LRRS_SRS/blob/master/Doc/Signup2.png?raw=true
+  
+
+c. Create lecturer/Ta accounts : to create lecturers by the
+   administration.
+
+.. image:: https://github.com/EngMohamedNor/LRRS_SRS/blob/master/Doc/CreateLecturer.php.png?raw=true
+
 
 d. Student groups : create course groups for group assignments , one
    student creates group (he/she will be the group admin) and then
@@ -117,18 +135,17 @@ d. Student groups : create course groups for group assignments , one
 e. Create courses : to create courses by the administration or
    lecturers.
 
-f. Join course : to register at specific course by students using course
-   id.
+f. Join course : students can enroll in course portals.
 
 g. Accept students : to accept students joining specific course by
-   lecturers & TAs. The member acceptance step can be disabled in course
-   portal setting by the lecturer.
+   lecturers & TA. The member acceptance step can be disabled in the
+   course portal setting by the lecturer.
 
 h. Post lab report: to post new lab report and assign deadline for it by
    lecturers.
 
-i. Update deadline : to update deadline for specific students(sick
-   students) or for all by lecturers.
+i. Update deadline : to update deadline for specific students(e.g sick
+   students) or for all students by lecturers.
 
 j. Lab report submission : student can submit his/her lab report
    individually or for his group (if he/she is the group admin) before
@@ -171,7 +188,10 @@ o.
 
    **2.1.5. Communication interfaces**
 
-   **None**
+   The communication between the different parts of the system is
+   important since they depend on each other. However, in what way the
+   communication is achieved is not important for the system and is
+   therefore handled by the underlying operating system.
 
    **2.1.6. Memory constraints**
 
@@ -196,14 +216,14 @@ The LRRS will allow access only to authorized users with specific roles
 (system administrator, lecturer, TA and student). Depending upon the
 user’s role, he/she will be able to access only specific modules of the
 system. Visitors can only view public reports without the need for
-authorization. The administrator creates lecturers , TA user accounts
-and course portals. Administrator assigns lecturer and TA to each course
+authorization. The administrator creates lecturers, A user accounts and
+course portals. Administrator assigns lecturer and TA to each course
 portal. To make the system more flexible we will allow the lecturer to
 create his/her own course portals. Students create their user accounts
-using their student id and Passport/ID numbers. Once student creates his
-own user account he/she can browse course portals in the system and join
-them. Based on the setting for each course portal (managed by the its
-lecturer) the joining may require to be accepted by the lecturer. The
+using their student id and Passport/ID numbers. Once student creates
+his/her own user account he/she can browse course portals in the system
+and join them. Based on the setting for each course portal (managed by
+its lecturer) the joining process may require lecturer acceptance. The
 lecturer posts lab reports inside course portals and the students can
 view/download them and submit their work for the lab report through the
 system.
@@ -219,6 +239,9 @@ system.
    student submissions.
 
 -  Students will be able to join courses and submit lab reports
+
+-  Lecturer will be able to mark student submissions and make it public
+   for visitors after the deadline.
 
 **2.3. User characteristics**
 
@@ -242,9 +265,9 @@ system.
 
 **2.5 Assumptions and dependencies**
 
--  The login id and password must be created by system administrator and
-   communicated to the concerned user confidentially to avoid
-   unauthorized access to the system.
+-  The login email and password for lecturers and TA must be created by
+   system administrator and communicated to the concerned user
+   confidentially to avoid unauthorized access to the system.
 
 -  It is assumed that a student registering for courses has paid desired
    university fee.
@@ -262,15 +285,19 @@ Not required
 The purpose of this diagram is to demonstrate how objects will interact
 with LRRS and map out the basic functionality of the system.
 
-Main actors
+Main characters of the system are :
 
-I.   Administrator
+1) Admin
 
-II.  Student
+2) Lecturer
 
-III. Lecturer
+3) Teaching Assistant (TA)
 
-IV.  |image0|\ Visitor
+ 4) Student
+
+
+.. image:: https://github.com/EngMohamedNor/LRRS_SRS/blob/master/Doc/UseCase1.png?raw=true
+
 
 **3.1.2 : Use Case Descriptions**
 
@@ -385,9 +412,12 @@ need for authentication.
 
 **3 . 2 Database diagram**
 
-|image1|\ The database schema is the blueprints of the system database,
-it represents the description of a database structure, data types, and
-the constraints on the database. The database will consist of 10 tables.
+The database schema is the blueprints of the system database, it
+represents the description of a database structure, data types, and the
+constraints on the database. The database will consist of 10 tables.
+
+.. image:: https://github.com/EngMohamedNor/LRRS_SRS/blob/master/Doc/DatabaseDiagram.png?raw=true
+
 
 **4. References**
 
@@ -401,8 +431,20 @@ the constraints on the database. The database will consist of 10 tables.
    829-1998.
 
 .. |image0| image:: media/image1.png
-   :width: 7.14583in
-   :height: 6.01042in
+   :width: 3.25in
+   :height: 2.74861in
 .. |image1| image:: media/image2.png
-   :width: 7.72917in
-   :height: 4.02083in
+   :width: 3.575in
+   :height: 3.05208in
+.. |image2| image:: media/image3.png
+   :width: 3.80208in
+   :height: 3.46875in
+.. |image3| image:: media/image4.png
+   :width: 3.53125in
+   :height: 2.375in
+.. |image4| image:: media/image5.png
+   :width: 5.625in
+   :height: 5.36389in
+.. |image5| image:: media/image6.png
+   :width: 7.44306in
+   :height: 3.95833in
